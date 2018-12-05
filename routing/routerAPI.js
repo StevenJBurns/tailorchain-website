@@ -6,16 +6,22 @@ const routerAPI = require("express").Router();
 // const UserAccount = require("../models/userAccountModel.js");
 
 
-routerAPI.get("/franchises", (req, res) => {
+routerAPI.get("/services", (req, res) => {
   // Franchise.find()
   //   .then(franchises => res.json(franchises))
   //   .catch(err => console.error(err));
+  res.status(200).json({
+    route: "services"
+  });
 });
 
-routerAPI.get("/userAccounts", (req, res) => {
-  // UserAccount.find()
-  //   .then(users => res.json(users))
-  //   .catch(err => console.error(err));
-});
+// routerAPI.get("/userAccounts", (req, res) => {
+//   UserAccount.find()
+//     .then(users => res.json(users))
+//     .catch(err => console.error(err));
+//   res.status(200).json({
+//     route: "authorization"
+//   });
+// });
 
 module.exports = routerAPI;
