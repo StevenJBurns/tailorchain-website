@@ -11,8 +11,8 @@ const logger = require("morgan");
 
 /* Local Dependencies */
 /* Two distinct Express Router objects for /auth and /api */
-// let routerAPI = require("./routers/routerAPI.js");
-// let routerAuth = require("./routers/routerAuth.js");
+let routerAPI = require("./routing/routerAPI.js");
+let routerAuth = require("./routing/routerAuth.js");
 
 
 /* Connect .env file values to Node process.env */
@@ -48,8 +48,8 @@ server.use(express.json());
 // server.use("/public", express.static(path.join(__dirname, "public")));
 
 /* Routers to catch /auth and /api routes */
-// server.use("/auth", routerAuth);
-// server.use("/api", routerAPI);
+server.use("/auth", routerAuth);
+server.use("/api", routerAPI);
 
 /* Catch-All middleware routing that serves up React client for non-API URLs vs a 404 error */
 // server.get("*", (req, res) => res.sendFile(path.join(__dirname, "client", "build", "index.html")));
