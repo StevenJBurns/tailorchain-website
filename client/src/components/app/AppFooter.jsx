@@ -4,7 +4,7 @@ import React from "react";
 
 const AppFooter = (props) => {
   return (
-    <footer></footer>
+    <footer>&copy;2018 &bull; TailorChain</footer>
   );
 };
 
