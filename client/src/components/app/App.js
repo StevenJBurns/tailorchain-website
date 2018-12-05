@@ -1,9 +1,9 @@
-
+/* React, Redux and Router Imports */ 
 import React from 'react';
 
-
+/* Local Dependencies */
 import './App.css';
-import logo from './assets/logo.svg';
+import logo from '../../assets/logo.svg';
 
 class App extends React.Component {
   render() {
