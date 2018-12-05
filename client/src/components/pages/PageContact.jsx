@@ -1,11 +1,12 @@
 import React from "react";
 
+import "./Pages.css";
 
 const PageContact = (props) => {
   return (
-    <main id="main-contact">
+    <React.Fragment>
       <h3>CONTACT</h3>
-    </main>
+    </React.Fragment>
   );
 };
 

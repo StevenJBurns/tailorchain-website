@@ -1,11 +1,12 @@
 import React from "react";
 
+import "./Pages.css";
 
 const PageDashboard = (props) => {
   return (
-    <main id="main-dashboard">
+    <React.Fragment>
       <h3>DASHBOARD</h3>
-    </main>
+    </React.Fragment>
   );
 };
 

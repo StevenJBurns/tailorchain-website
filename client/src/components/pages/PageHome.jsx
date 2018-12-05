@@ -1,11 +1,13 @@
+
 import React from "react";
 
+import "./Pages.css";
 
 const PageHome = (props) => {
   return (
-    <main id="main-home">
+    <React.Fragment>
       <h3>HOME</h3>
-    </main>
+    </React.Fragment>
   );
 };
 

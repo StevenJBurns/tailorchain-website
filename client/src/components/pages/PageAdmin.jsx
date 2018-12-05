@@ -1,11 +1,12 @@
 import React from "react";
 
+import "./Pages.css";
 
 const PageAdmin = (props) => {
   return (
-    <main id="main-admin">
+    <React.Fragment>
       <h3>ADMIN</h3>
-    </main>
+    </React.Fragment>
   );
 };
 

@@ -1,11 +1,12 @@
 import React from "react";
 
+import "./Pages.css";
 
 const PageServices = (props) => {
   return (
-    <main id="main-services">
+    <React.Fragment>
       <h3>SERVICES</h3>
-    </main>
+    </React.Fragment>
   );
 };
 

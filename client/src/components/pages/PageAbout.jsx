@@ -1,11 +1,12 @@
 import React from "react";
 
+import "./Pages.css";
 
 const PageABout = (props) => {
   return (
-    <main id="main-about">
+    <React.Fragment>
       <h3>ABOUT</h3>
-    </main>
+    </React.Fragment>
   );
 };
 
