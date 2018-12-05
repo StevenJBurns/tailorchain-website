@@ -2,12 +2,15 @@
 import React from "react";
 import { Switch } from "react-router";
 
+/* Local Dependencies */
+import "./App.css";
+
 
 const AppMain = (props) => {
   return (
-    <Switch>
+    <main>
 
-    </Switch>
+    </main>
   );
 };
 
