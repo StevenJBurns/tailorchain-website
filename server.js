@@ -29,9 +29,9 @@ server.use(logger("dev"));
 server.use(express.json());
 
 /* connect to MongoDB via mongoose */
-// mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser: true })
-//   .then(() => console.log(chalk.bgWhite.black(`        Connected to MongoDB           `)))
-//   .catch(err => console.log(err));
+mongoose.connect(process.env.MLAB_URI, { useNewUrlParser: true })
+  .then(() => console.log(chalk.bgWhite.black(`        Connected to MongoDB           `)))
+  .catch(err => console.log(err));
 
 /* serve-favicon Middleware */
 // server.use(favicon(path.join(__dirname, "public", "favicon.ico")));
