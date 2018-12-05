@@ -4,7 +4,9 @@ import React from "react";
 
 const AppHeader = (props) => {
   return (
-    <header></header>
+    <header>
+      <h1>TailorChain</h1>
+    </header>
   );
 };
 
