@@ -42,7 +42,7 @@ mongoose.connect(process.env.MLAB_URI, { useNewUrlParser: true })
 // });
 
 /* Routing Middleware to catch the index.html request and serve up the React client */
-server.use("/", express.static(path.join(__dirname, "public")));
+server.use("/", express.static(path.join(__dirname, "client", "build")));
 
 /* Routing Middleware to catch requests for static assets */
 // server.use("/public", express.static(path.join(__dirname, "public")));
@@ -52,7 +52,7 @@ server.use("/auth", routerAuth);
 server.use("/api", routerAPI);
 
 /* Catch-All middleware routing that serves up React client for non-API URLs vs a 404 error */
-server.get("*", (req, res) => res.sendFile(path.join(__dirname, "public", "index.html")));
+server.get("*", (req, res) => res.sendFile(path.join(__dirname, "client", "build", "index.html")));
 
 /* Express catch-all error handler */
 server.use((err, req, res, next) => {
