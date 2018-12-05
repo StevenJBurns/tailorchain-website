@@ -1,0 +1,21 @@
+{
+  "name": "taylorchain-website",
+  "version": "0.1.0",
+  "description": "",
+  "author": "",
+  "license": "ISC",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/StevenJBurns/taylorchain-website.git"
+  },
+  "bugs": {
+    "url": "https://github.com/StevenJBurns/taylorchain-website/issues"
+  },
+  "homepage": "https://github.com/StevenJBurns/taylorchain-website#readme",
+  "keywords": []
+}
