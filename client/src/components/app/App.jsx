@@ -6,9 +6,8 @@ import AppHeader from "./AppHeader.jsx";
 import AppNav from "./AppNav.jsx";
 import AppMain from "./AppMain.jsx";
 import AppFooter from "./AppFooter.jsx";
-
 import './App.css';
-import logo from '../../assets/logo.svg';
+
 
 class App extends React.Component {
   render() {
