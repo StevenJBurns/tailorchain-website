@@ -20,6 +20,10 @@
     "morgan": "^1.9.1",
     "serve-favicon": "^2.5.0"
   },
+  "engines": {
+    "node": "10.13.0",
+    "npm": "6.4.1"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/StevenJBurns/taylorchain-website.git"
