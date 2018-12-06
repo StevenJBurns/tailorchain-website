@@ -2,7 +2,8 @@ import React from "react";
 
 import "./Pages.css";
 
-const PageABout = (props) => {
+
+const PageAbout = (props) => {
   return (
     <React.Fragment>
       <h3>ABOUT</h3>
@@ -10,4 +11,4 @@ const PageABout = (props) => {
   );
 };
 
-export default PageABout;
+export default PageAbout;
