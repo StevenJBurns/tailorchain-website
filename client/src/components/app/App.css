@@ -3,19 +3,25 @@
   padding: 0
 }
 
-nav {
-  color: #F0F0F0;
-  background-color: lightsteelblue
-}
-
 header {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   min-height: 96px;
   text-align: center;
   background-color: steelblue
+}
+
+header h1 {
+  display: inline-block;
+  margin: 0 auto;
+  color: greenyellow
+}
+
+nav {
+  color: #F0F0F0;
+  background-color: lightsteelblue
 }
 
 main {
