@@ -34,7 +34,7 @@ mongoose.connect(process.env.MLAB_URI, { useNewUrlParser: true })
   .catch(err => console.log(err));
 
 /* serve-favicon Middleware */
-// server.use(favicon(path.join(__dirname, "public", "favicon.ico")));
+server.use(favicon(path.join(__dirname, "public", "favicon.ico")));
 
 /* JWT Middleware */
 // server.use("/", expressJWT({ secret: process.env.SECRET_KEY}), (req, res, next) => {
