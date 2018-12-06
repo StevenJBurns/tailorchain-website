@@ -3,6 +3,11 @@
   padding: 0
 }
 
+nav {
+  color: #F0F0F0;
+  background-color: lightsteelblue
+}
+
 header {
   display: flex;
   flex-direction: column;
