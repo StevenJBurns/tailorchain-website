@@ -1,7 +1,4 @@
-/* Node Dependencies */
 const path = require("path");
-
-/* External Dependencies */
 const chalk = require("chalk");
 const express = require("express");
 const favicon = require("serve-favicon");
@@ -9,11 +6,9 @@ const favicon = require("serve-favicon");
 const mongoose = require("mongoose");
 const logger = require("morgan");
 
-/* Local Dependencies */
 /* Two distinct Express Router objects for /auth and /api */
 let routerAPI = require("./routing/routerAPI.js");
 let routerAuth = require("./routing/routerAuth.js");
-
 
 /* Connect .env file values to Node process.env */
 require("dotenv").config();
@@ -29,7 +24,12 @@ server.use(logger("dev"));
 server.use(express.json());
 
 /* connect to MongoDB via mongoose */
-mongoose.connect(process.env.MLAB_URI, { useNewUrlParser: true })
+const mongooseOptions = {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+};
+
+mongoose.connect(process.env.MLAB_URI, mongooseOptions)
   .then(() => console.log(chalk.bgWhite.black(`        Connected to MongoDB           `)))
   .catch(err => console.log(err));
 
